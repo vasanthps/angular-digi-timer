@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>angular-digi-timer demo page</title>
+        <link href="angular-digi-timer-styles.css" type="text/css"></linK>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.21/angular.min.js"></script>
+        <script src="angular-digi-timer.js"></script>
+    <script>
+        var demoApp = angular.module('digiTimerDemo', ['digiTimer']);
+        demoApp.controller('demoController', function($scope) {
+            
+        });
+    </script>
+    </head>
+    <body ng-app="digiTimerDemo" ng-controller="demoController">
+        <div digi-timer digi-mode="system" digi-format="hms"></div>
+    </body>
+</html>
